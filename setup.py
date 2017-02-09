@@ -8,4 +8,13 @@ setup(
     author='Roshan Prabhakar',
     author_email='roshancvp@gmail.com',
     license='MIT',
+    install_requires=[
+    'click',
+    'termcolor',
+    'requests',
+    ],
+    entry_points='''
+        [console_scripts]
+        reddit_cli=reddit_cli:cli
+    ''',
 )
